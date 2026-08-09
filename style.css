@@ -1,0 +1,802 @@
+/* =========================================
+   CAMPUSFIX
+   TRADITIONAL + MODERN UNIVERSITY PORTAL
+   MMDU INSPIRED
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.65),
+            rgba(255, 255, 255, 0.65)
+        ),
+        url("campus.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: linear-gradient(135deg, #650000, #8b0000 55%, #a00000);
+    color: white;
+    border-bottom: 4px solid #c4a24d;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 17px 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* ================= MMDU LOGO ================= */
+
+.header-container img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+
+    background-color: white;
+    padding: 4px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================= HEADER TITLE ================= */
+
+.header-title {
+    flex: 1;
+}
+
+.header-title h1 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+    letter-spacing: 0.3px;
+}
+
+.header-title p {
+    margin: 4px 0;
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+
+/* =================================================
+   TOP-RIGHT LOGIN / REGISTER BUTTONS
+   ================================================= */
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-left: auto;
+}
+
+
+/* IMPORTANT:
+   These styles override the general button styling.
+*/
+
+.header-buttons button {
+    display: inline-block;
+
+    background-color: #ffffff !important;
+    color: #8b0000 !important;
+
+    border: 2px solid #ffffff !important;
+    border-radius: 5px;
+
+    padding: 10px 20px;
+
+    margin: 0;
+
+    min-width: 90px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: none !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transition: all 0.2s ease;
+}
+
+.header-buttons button:hover {
+    background-color: #f7eaea !important;
+    color: #650000 !important;
+
+    border-color: #ffffff !important;
+
+    transform: translateY(-1px);
+
+    box-shadow: none !important;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    background-color: #292929;
+
+    text-align: center;
+
+    border-bottom: 1px solid #111;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    display: inline-block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 23px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border-bottom: 3px solid transparent;
+
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #8b0000;
+
+    border-bottom-color: #c4a24d;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 40px 25px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    text-align: center;
+
+    background-color: white;
+
+    padding: 42px 30px;
+
+    border: 1px solid #ddd;
+
+    border-top: 5px solid #8b0000;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero h1 {
+    color: #8b0000;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+
+    margin: 0 0 5px;
+}
+
+.hero h2 {
+    font-weight: normal;
+
+    color: #444;
+
+    margin-top: 5px;
+}
+
+.hero p {
+    max-width: 720px;
+
+    margin: 15px auto;
+
+    color: #555;
+}
+
+
+/* ================= CAMPUS IMAGE ================= */
+
+.campus-image {
+    max-width: 100%;
+
+    width: 850px;
+
+    display: block;
+
+    margin: 28px auto;
+
+    border: 1px solid #ccc;
+
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    background-color: white;
+
+    padding: 30px;
+
+    margin: 28px 0;
+
+    border: 1px solid #ddd;
+
+    border-left: 5px solid #8b0000;
+
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.06);
+}
+
+.section h2 {
+    color: #8b0000;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    border-bottom: 2px solid #c4a24d;
+
+    padding-bottom: 10px;
+
+    margin-top: 0;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+.page-title {
+    background-color: white;
+
+    padding: 28px 30px;
+
+    border-left: 5px solid #8b0000;
+
+    border-bottom: 1px solid #ddd;
+
+    margin-bottom: 28px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.page-title h1 {
+    margin: 0;
+
+    color: #8b0000;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 34px;
+}
+
+.page-title p {
+    color: #666;
+
+    margin-bottom: 0;
+}
+
+
+/* ================= GENERAL BUTTON ================= */
+
+button {
+    background: linear-gradient(
+        135deg,
+        #8b0000,
+        #a00000
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    box-shadow: 0 3px 8px rgba(139, 0, 0, 0.18);
+
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #650000;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 5px 12px rgba(139, 0, 0, 0.25);
+}
+
+
+/* ================= FORMS ================= */
+
+.form-container,
+.register-container,
+.complaint-container {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 35px auto;
+
+    background-color: white;
+
+    padding: 35px 40px;
+
+    border: 1px solid #ccc;
+
+    border-top: 5px solid #8b0000;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.register-container {
+    max-width: 650px;
+}
+
+
+/* ================= FORM HEADINGS ================= */
+
+.form-container h2,
+.register-container h2,
+.complaint-container h2 {
+    color: #8b0000;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    border-bottom: 2px solid #c4a24d;
+
+    padding-bottom: 12px;
+
+    margin-top: 0;
+
+    margin-bottom: 28px;
+}
+
+
+/* ================= LABELS ================= */
+
+label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+/* ================= INPUTS ================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 3px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    background-color: #fff;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #8b0000;
+
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.08);
+}
+
+textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* ================= FORM BUTTON ================= */
+
+.form-container button,
+.register-container button,
+.complaint-container button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    font-size: 15px;
+}
+
+
+/* ================= FILE UPLOAD ================= */
+
+input[type="file"] {
+    background-color: #fafafa;
+
+    padding: 10px;
+}
+
+
+/* ================= LINKS ================= */
+
+.home-link,
+.links {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.home-link a,
+.links a {
+    color: #8b0000;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.2s ease;
+}
+
+.home-link a:hover,
+.links a:hover {
+    color: #650000;
+
+    text-decoration: underline;
+}
+
+
+/* ================= FEATURE CARDS ================= */
+
+.features {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+
+    min-width: 220px;
+
+    background-color: white;
+
+    padding: 24px;
+
+    border: 1px solid #ddd;
+
+    border-top: 4px solid #8b0000;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    transition: all 0.2s ease;
+}
+
+.feature:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 17px rgba(0, 0, 0, 0.09);
+}
+
+.feature h3 {
+    color: #8b0000;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    margin-top: 0;
+}
+
+
+/* ================= MEMBER B HEADER ================= */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #650000,
+        #8b0000,
+        #a00000
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 21px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    border-bottom: 4px solid #c4a24d;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= MMDU LOGO ================= */
+
+.mmdu-logo {
+    display: block;
+
+    width: 100%;
+
+    max-width: 650px;
+
+    height: auto;
+
+    margin: 10px auto 30px auto;
+
+    object-fit: contain;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #292929;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 28px;
+
+    margin-top: 45px;
+
+    border-top: 4px solid #c4a24d;
+}
+
+footer p {
+    margin: 6px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .header-container {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .header-buttons {
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+
+    .header-buttons button {
+        margin: 4px;
+    }
+
+    nav a {
+        display: block;
+
+        padding: 12px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .hero {
+        padding: 32px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 23px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .form-container,
+    .register-container,
+    .complaint-container {
+        width: 94%;
+
+        padding: 28px 22px;
+    }
+
+    .header {
+        font-size: 25px;
+    }
+}
+/* ==================================================
+   FORCE TOP-RIGHT LOGIN / REGISTER BUTTONS
+   ================================================== */
+
+header .header-buttons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-left: auto !important;
+}
+
+header .header-buttons button {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+
+    color: #8b0000 !important;
+
+    border: 2px solid #ffffff !important;
+    border-radius: 6px !important;
+
+    padding: 11px 24px !important;
+
+    min-width: 110px !important;
+    height: 50px !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) !important;
+
+    cursor: pointer !important;
+}
+
+header .header-buttons button:hover {
+    background: #f5eaea !important;
+    background-color: #f5eaea !important;
+
+    color: #650000 !important;
+
+    transform: translateY(-1px);
+}
+/* ================= LOGIN PAGE ================= */
+
+.login-container {
+    width: 420px;
+    max-width: 90%;
+
+    margin: 45px auto;
+
+    padding: 32px;
+
+    background-color: white;
+
+    border: 1px solid #ccc;
+    border-top: 5px solid #8b0000;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.login-container h2 {
+    text-align: center;
+
+    color: #8b0000;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    border-bottom: 2px solid #c4a24d;
+
+    padding-bottom: 12px;
+
+    margin-top: 0;
+}
+
+.login-container input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 3px;
+
+    font-size: 15px;
+}
+
+.login-container button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 5px;
+}
+
+.login-container .links {
+    text-align: center;
+
+    margin-top: 20px;
+}
+/* ================= LOGIN BACKGROUND ================= */
+
+body:has(.login-container) {
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.60),
+            rgba(255, 255, 255, 0.60)
+        ),
+        url("campus.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Don't cover the campus image with white */
+body:has(.login-container) main {
+    background-color: transparent;
+}

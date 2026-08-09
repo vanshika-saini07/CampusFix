@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submit Complaint | CampusFix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-container">
+
+        <img src="mmdu-logo.png" alt="MMDU Logo">
+
+        <div class="header-title">
+
+            <h1>CampusFix</h1>
+
+            <p>
+                Smart Campus Complaint Management System
+            </p>
+
+            <p>
+                Maharishi Markandeshwar (Deemed to be University)
+            </p>
+
+        </div>
+
+        <div class="header-buttons">
+
+            <a href="login.html">
+                <button>Login</button>
+            </a>
+
+            <a href="register.html">
+                <button>Register</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About CampusFix</a>
+
+    <a href="login.html">Login</a>
+
+    <a href="register.html">Register</a>
+
+</nav>
+
+
+<main>
+
+    <div class="page-title">
+
+        <h1>Submit a Complaint</h1>
+
+        <p>
+            Report a campus-related problem to the concerned department
+        </p>
+
+    </div>
+
+
+    <div class="form-container">
+
+        <form>
+
+
+            <!-- Category -->
+
+            <div class="form-group">
+
+                <label for="category">
+                    Complaint Category
+                </label>
+
+                <select
+                    id="category"
+                    name="category"
+                    required
+                >
+
+                    <option value="">
+                        -- Select Category --
+                    </option>
+
+                    <option value="Wi-Fi / Internet">
+                        Wi-Fi / Internet
+                    </option>
+
+                    <option value="Electricity">
+                        Electricity
+                    </option>
+
+                    <option value="Water">
+                        Water Supply / Leakage
+                    </option>
+
+                    <option value="Hostel">
+                        Hostel
+                    </option>
+
+                    <option value="Classroom">
+                        Classroom
+                    </option>
+
+                    <option value="Laboratory">
+                        Laboratory
+                    </option>
+
+                    <option value="Library">
+                        Library
+                    </option>
+
+                    <option value="Cafeteria">
+                        Cafeteria / Mess
+                    </option>
+
+                    <option value="Cleanliness">
+                        Cleanliness / Sanitation
+                    </option>
+
+                    <option value="Transport">
+                        Transport
+                    </option>
+
+                    <option value="Security">
+                        Safety / Security
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Description -->
+
+            <div class="form-group">
+
+                <label for="description">
+                    Detailed Description
+                </label>
+
+                <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Please describe the problem clearly, including any relevant details."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- Location -->
+
+            <div class="form-group">
+
+                <label for="location">
+                    Location
+                </label>
+
+                <select
+                    id="location"
+                    name="location"
+                    required
+                >
+
+                    <option value="">
+                        -- Select Location --
+                    </option>
+
+                    <option value="Admin Block">
+                        Admin Block
+                    </option>
+
+                    <option value="MMICTBM">
+                        MMICTBM
+                    </option>
+
+                    <option value="Faculty of Agriculture">
+                        Faculty of Agriculture
+                    </option>
+
+                    <option value="Engineering Block 1">
+                        Engineering Block 1
+                    </option>
+
+                    <option value="Engineering Block 3">
+                        Engineering Block 3
+                    </option>
+
+                    <option value="Department of Pharmacy">
+                        Department of Pharmacy
+                    </option>
+
+                    <option value="Department of Law">
+                        Department of Law
+                    </option>
+
+                    <option value="Department of Dental Science">
+                        Department of Dental Science
+                    </option>
+
+                    <option value="Mess">
+                        Mess
+                    </option>
+
+                    <option value="Library">
+                        Library
+                    </option>
+
+                    <option value="Sports Area">
+                        Sports Area
+                    </option>
+
+                    <option value="Administrative Block">
+                        Administrative Block
+                    </option>
+
+                    <option value="Parking Area">
+                        Parking Area
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Other Location -->
+
+            <div class="form-group">
+
+                <label for="otherLocation">
+                    If you selected Other, specify the location
+                </label>
+
+                <textarea
+                    id="otherLocation"
+                    name="otherLocation"
+                    placeholder="Example: Auditorium, Main Gate, Parking Area, etc."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Priority -->
+
+            <div class="form-group">
+
+                <label for="priority">
+                    Priority
+                </label>
+
+                <select
+                    id="priority"
+                    name="priority"
+                    required
+                >
+
+                    <option value="">
+                        -- Select Priority --
+                    </option>
+
+                    <option value="Low">
+                        Low
+                    </option>
+
+                    <option value="Medium">
+                        Medium
+                    </option>
+
+                    <option value="High">
+                        High
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Image -->
+
+            <div class="form-group">
+
+                <label for="image">
+                    Supporting Image
+                </label>
+
+                <input
+                    type="file"
+                    id="image"
+                    name="image"
+                    accept="image/*"
+                >
+
+            </div>
+
+
+            <!-- Submit -->
+
+            <button type="submit">
+                Submit Complaint
+            </button>
+
+        </form>
+
+
+        <p class="home-link">
+
+            <a href="index.html">
+                Back to Home
+            </a>
+
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+
+        <strong>CampusFix</strong>
+
+        <br>
+
+        Smart Campus Complaint Management System
+
+        <br>
+
+        Maharishi Markandeshwar (Deemed to be University)
+
+    </p>
+
+    <p>
+        © 2026 CampusFix
+    </p>
+
+</footer>
+
+</body>
+
+</html>

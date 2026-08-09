@@ -8,7 +8,7 @@ The system aims to provide a centralized and organized platform where students c
 
 ---
 
-## 📌 About the Project
+## About the Project
 
 Students may face different problems around the university campus, such as:
 
@@ -32,7 +32,7 @@ A student can register, log in and submit a complaint by providing relevant info
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 The main purpose of CampusFix is to make campus problem reporting:
 
@@ -46,7 +46,7 @@ The project aims to improve communication between students and the university ad
 
 ---
 
-## ⭐ Main Features
+## Main Features
 
 ### Student Registration
 
@@ -98,7 +98,7 @@ Students can optionally upload an image to provide visual information about the 
 
 ---
 
-## 🖥️ Website Pages
+## Website Pages
 
 ### Home Page
 
@@ -132,7 +132,7 @@ Provides the complaint submission form.
 
 ---
 
-## 🔄 Current Website Flow
+## Current Website Flow
 
 The current front-end flow is:
 
@@ -150,7 +150,7 @@ Students can also access the About page from the main navigation.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 The current front-end prototype is developed using:
 
@@ -163,7 +163,7 @@ CSS is used to create the visual design, layout, colors, forms and responsive st
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 CampusFix/
 
@@ -195,7 +195,7 @@ CampusFix/
 
 ---
 
-## 👥 Team
+## Team
 
 ### Team Members
 
@@ -205,7 +205,7 @@ CampusFix/
 
 ---
 
-## 🏫 Developed For
+## Developed For
 
 Maharishi Markandeshwar (Deemed to be University)
 
@@ -213,7 +213,7 @@ Mullana-Ambala, Haryana
 
 ---
 
-## 🚀 Future Development
+## Future Development
 
 The current version is a front-end prototype.
 
@@ -235,7 +235,7 @@ Future versions can include:
 
 ---
 
-## 📊 Project Objective
+## Project Objective
 
 CampusFix aims to develop a centralized digital system for reporting and managing campus problems.
 
@@ -245,7 +245,7 @@ The long-term goal is to make campus maintenance more organized, responsive and 
 
 ---
 
-## 📌 Project Status
+## Project Status
 
 Current Stage:
 
@@ -267,6 +267,6 @@ Future stages will focus on backend development, database integration, authentic
 
 ---
 
-## 📄 License
+## License
 
 This project is developed as an academic project for educational purposes.

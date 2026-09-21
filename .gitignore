@@ -5,3 +5,14 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+# Private admin setup
+create_admin.py
+
+# Passwords and secrets
+.env
+.env.*
+!.env.example
+
+# Local database backups
+*.sql
+*.sql.gz

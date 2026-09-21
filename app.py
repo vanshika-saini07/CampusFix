@@ -91,7 +91,35 @@ def get_db_connection():
         database=os.getenv("DB_NAME", "campusfix"),
         port=int(os.getenv("DB_PORT", "3306"))
     )
+# =============================
+# COMMON STYLED ERROR PAGE
+# =============================
 
+def show_error(title, message, status_code=400, back_url="/login",
+               back_text="Back to Login"):
+
+    return f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>{title} | CampusFix</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+
+    <body>
+        <div class="header">CampusFix</div>
+
+        <div class="login-container">
+            <h2>{title}</h2>
+            <p>{message}</p>
+            <a href="{back_url}">{back_text}</a>
+        </div>
+    </body>
+    </html>
+    """, status_code
 # =============================
 # HOME PAGE
 # =============================
@@ -282,25 +310,20 @@ def login_page():
 
             return redirect(url_for("my_complaints"))
 
-        return """
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Login Error | CampusFix</title>
-            <link rel="stylesheet" href="/static/style.css">
-        </head>
-        <body class="registration-success">
-            <div class="header">CampusFix</div>
-            <div class="login-container">
-                <h2>Invalid Student ID/Email or Password</h2>
-                <p>Please check your details and try again.</p>
-                <a href="/login">Back to Login</a>
-            </div>
-        </body>
-        </html>
-        """, 401
+        if not login_id or not password:
+            return show_error(
+        "Missing Login Details",
+        "Please enter your Student ID/email and password.",
+        400
+    )
+        if not login_id or not password:
+            return show_error(
+        "Missing Login Details",
+        "Please enter your Student ID/email and password.",
+        400
+    )
+
+       
 
     except mysql.connector.Error as e:
         print("Login database error:", e)
@@ -606,10 +629,16 @@ def admin_login():
 
             return redirect(url_for("admin_dashboard"))
 
-        return """
-        <h2>Invalid admin email or password</h2>
-        <a href="/admin/login">Try Again</a>
-        """, 401
+
+            return show_error(
+        "Invalid Admin Email or Password",
+    "Please check your details and try again.",
+    401,
+    "/admin/login",
+    "Try Again"
+)
+
+    
 
     except mysql.connector.Error as e:
         print("Admin login error:", e)

@@ -832,322 +832,62 @@ body:has(.login-container) main {
 }
 
 
+
 /* ==========================================
-   CAMPUSFIX — MOBILE ONLY DESIGN
-   Desktop view remains unchanged
+   CAMPUSFIX - DESKTOP STYLE, MOBILE VERSION
+   Desktop CSS remains unchanged
    ========================================== */
 
 @media screen and (max-width: 700px) {
 
-    /* Prevent horizontal scrolling */
+    /* Prevent horizontal overflow */
     html,
     body {
+        width: 100%;
         max-width: 100%;
         overflow-x: hidden;
     }
 
-    /* Header */
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 22px 14px;
-        gap: 12px;
-    }
-
-    .header-container img {
-        width: 62px;
-        height: 62px;
-    }
-
-    .header-title {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .header-title h1 {
-        font-size: 25px;
-        line-height: 1.3;
-    }
-
-    .header-title p {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-
-    /* Login and Register */
-    header .header-buttons {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px !important;
-        margin: 8px 0 0 !important;
-    }
-
-    header .header-buttons button {
-        min-width: 110px !important;
-        height: 44px !important;
-        padding: 10px 16px !important;
-        font-size: 14px !important;
-    }
-
-    /* Navigation — neat mobile layout */
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 5px;
-    }
-
-    nav a {
-        display: inline-block;
-        padding: 11px 12px;
-        font-size: 13px;
-        border-bottom: 2px solid transparent;
-    }
-
-    /* Main area */
-    main {
-        width: 100%;
-        padding: 22px 13px;
-    }
-
-    /* Hero section */
-    .hero {
-        padding: 28px 17px;
-        border-radius: 10px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-        line-height: 1.3;
-    }
-
-    .hero h2 {
-        font-size: 19px;
-        line-height: 1.4;
-    }
-
-    .hero p {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    /* Page title */
-    .page-title {
-        padding: 22px 17px;
-        border-radius: 8px;
-    }
-
-    .page-title h1 {
-        font-size: 27px;
-        line-height: 1.35;
-    }
-
-    .page-title p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    /* Content sections */
-    .section {
-        padding: 22px 17px;
-        margin: 20px 0;
-        border-radius: 8px;
-    }
-
-    .section h2 {
-        font-size: 22px;
-        line-height: 1.4;
-    }
-
-    .section p,
-    .section li {
-        font-size: 14px;
-        line-height: 1.75;
-    }
-
-    /* Feature cards */
-    .features {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .feature {
-        width: 100%;
-        min-width: 0;
-        padding: 22px 18px;
-        border-radius: 8px;
-    }
-
-    .feature h3 {
-        font-size: 19px;
-    }
-
-    .feature p {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    /* Images */
-    .campus-image,
-    .mmdu-logo {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: 20px auto;
-        border-radius: 8px;
-    }
-
-    /* Login, Register and Complaint forms */
-    .form-container,
-    .register-container,
-    .complaint-container,
-    .login-container {
-        width: 100%;
-        max-width: 100%;
-        margin: 20px auto;
-        padding: 25px 17px;
-        border-radius: 8px;
-    }
-
-    .form-container h2,
-    .register-container h2,
-    .complaint-container h2,
-    .login-container h2 {
-        font-size: 23px;
-        line-height: 1.4;
-    }
-
-    /* Inputs */
-    input,
-    select,
-    textarea {
-        width: 100%;
-        max-width: 100%;
-        padding: 13px;
-        font-size: 16px;
-        border-radius: 6px;
-    }
-
-    /* Form buttons */
-    .form-container button,
-    .register-container button,
-    .complaint-container button,
-    .login-container button {
-        width: 100%;
-        min-height: 45px;
-        border-radius: 6px;
-    }
-
-    /* Role selection */
-    .role-buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .role-btn {
-        padding: 10px 18px;
-        border-radius: 7px;
-    }
-
-    /* Footer */
-    footer {
-        padding: 24px 15px;
-        margin-top: 30px;
-        font-size: 13px;
-        line-height: 1.7;
-    }
-
-    /* Mobile background */
-    body,
-    body:has(.login-container) {
-        background-attachment: scroll;
-        background-position: center top;
-    }
-}
-
-/* Extra-small phones */
-@media screen and (max-width: 380px) {
-
-    .header-title h1 {
-        font-size: 22px;
-    }
-
-    .hero h1 {
-        font-size: 25px;
-    }
-
-    nav a {
-        padding: 10px 9px;
-        font-size: 12px;
-    }
-
-    .section,
-    .feature {
-        padding: 18px 14px;
-    }
-
-    .form-container,
-    .register-container,
-    .complaint-container,
-    .login-container {
-        padding: 20px 13px;
-    }
-}
-
-/* =========================================
-   CAMPUSFIX — MOBILE HEADER FIX ONLY
-   Desktop / PC design remains unchanged
-   ========================================= */
-
-@media screen and (max-width: 700px) {
-
-    /* Header layout */
+    /* HEADER: logo + title + buttons */
     header .header-container {
+        width: 100%;
+        padding: 14px 12px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        width: 100%;
-        padding: 22px 15px;
-        gap: 12px;
+        gap: 10px;
+        text-align: left;
     }
 
-    /* University logo */
     header .header-container img {
-        display: block;
-        width: 75px;
-        height: 75px;
-        object-fit: contain;
-        margin: 0 auto;
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        margin: 0;
     }
 
-    /* CampusFix title and subtitle */
     header .header-title {
-        width: 100%;
-        flex: none;
+        flex: 1;
         min-width: 0;
-        text-align: center;
+        width: auto;
+        text-align: left;
     }
 
     header .header-title h1 {
-        font-size: 29px;
-        line-height: 1.3;
-        margin: 0 0 8px;
+        font-size: 22px;
+        line-height: 1.2;
+        margin: 0 0 4px;
     }
 
     header .header-title p {
-        font-size: 13px;
-        line-height: 1.5;
-        margin: 5px 0;
-        overflow-wrap: break-word;
+        font-size: 11px;
+        line-height: 1.35;
+        margin: 3px 0;
     }
 
-    /* Login and Register buttons */
+    /* Keep buttons on the same header row when possible */
     header .header-buttons {
         display: flex !important;
         flex-direction: row;
@@ -1155,90 +895,99 @@ body:has(.login-container) main {
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        gap: 12px !important;
-        margin: 10px 0 0 !important;
+        gap: 8px !important;
+        margin: 8px 0 0 !important;
     }
 
     header .header-buttons a {
         display: inline-block;
         width: auto;
-        max-width: 48%;
     }
 
     header .header-buttons button {
-        width: 120px;
-        min-width: 0 !important;
-        height: 44px !important;
-        padding: 10px 12px !important;
-        font-size: 14px !important;
+        width: auto;
+        min-width: 85px !important;
+        height: 38px !important;
+        padding: 8px 15px !important;
+        font-size: 13px !important;
     }
 
-    /* Navigation */
+    /* NAVIGATION: horizontal like PC */
     nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         align-items: center;
-        padding: 4px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0 5px;
+        -webkit-overflow-scrolling: touch;
     }
 
     nav a {
         display: inline-block;
-        padding: 11px 12px;
-        font-size: 13px;
-        text-align: center;
+        flex: 0 0 auto;
+        padding: 12px 14px;
+        font-size: 12px;
     }
 
-    /* About page content */
+    /* MAIN CONTENT */
     main {
         width: 100%;
         max-width: 100%;
-        padding: 20px 12px;
         margin: 0 auto;
+        padding: 20px 12px;
     }
 
+    /* Page title card */
     .page-title {
-        padding: 20px 16px;
-        margin-bottom: 18px;
+        padding: 20px 18px;
+        margin-bottom: 20px;
     }
 
     .page-title h1 {
         font-size: 27px;
-        line-height: 1.35;
+        line-height: 1.25;
     }
 
     .page-title p {
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 
+    /* Content cards */
     .section {
         width: 100%;
-        padding: 20px 16px;
-        margin: 18px 0;
+        padding: 22px 18px;
+        margin: 20px 0;
     }
 
     .section h2 {
         font-size: 21px;
-        line-height: 1.4;
-        overflow-wrap: break-word;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
     }
 
     .section p,
     .section li {
         font-size: 14px;
-        line-height: 1.7;
-        overflow-wrap: break-word;
+        line-height: 1.65;
+        overflow-wrap: anywhere;
+    }
+
+    .section ul {
+        padding-left: 22px;
     }
 
     /* Campus image */
-    .section .campus-image {
+    .campus-image {
         display: block;
         width: 100%;
         max-width: 100%;
         height: auto;
         margin: 20px auto 0;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     /* Footer */
@@ -1246,27 +995,54 @@ body:has(.login-container) main {
         padding: 22px 14px;
         font-size: 13px;
         line-height: 1.6;
-        overflow-wrap: break-word;
     }
 }
 
-/* Extra-small phones */
+/* Very small phones */
 @media screen and (max-width: 380px) {
+
+    header .header-container {
+        padding: 12px 9px;
+        gap: 8px;
+    }
+
+    header .header-container img {
+        width: 40px;
+        height: 40px;
+    }
+
     header .header-title h1 {
-        font-size: 25px;
+        font-size: 19px;
+    }
+
+    header .header-title p {
+        font-size: 10px;
     }
 
     header .header-buttons button {
-        width: 110px;
+        min-width: 78px !important;
+        padding: 7px 10px !important;
     }
 
     nav a {
-        padding: 10px 8px;
-        font-size: 12px;
+        padding: 11px 10px;
+        font-size: 11px;
+    }
+
+    main {
+        padding: 15px 9px;
+    }
+
+    .page-title {
+        padding: 17px 14px;
     }
 
     .page-title h1 {
-        font-size: 24px;
+        font-size: 23px;
+    }
+
+    .section {
+        padding: 18px 14px;
     }
 
     .section h2 {

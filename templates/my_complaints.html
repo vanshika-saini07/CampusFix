@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Complaints | CampusFix</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        .my-complaints-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 25px;
+        }
+
+        .complaint-card {
+            background: white;
+            border-radius: 12px;
+            padding: 22px;
+            margin: 20px 0;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #8b0000;
+        }
+
+        .complaint-card h3 {
+            margin-top: 0;
+        }
+
+        .complaint-info {
+            line-height: 1.8;
+        }
+
+        .status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.status-pending {
+    background: #FEE2E2;
+    color: #B91C1C;
+    border-color: #FCA5A5;
+}
+
+.status-in-progress {
+    background: #FFEDD5;
+    color: #C2410C;
+    border-color: #FDBA74;
+}
+
+.status-resolved {
+    background: #DCFCE7;
+    color: #15803D;
+    border-color: #86EFAC;
+}
+
+        .empty-message {
+            text-align: center;
+            padding: 35px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        .page-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .page-buttons a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="/static/mmdu-logo.png" alt="MMDU Logo">
+
+            <div class="header-title">
+                <h1>CampusFix</h1>
+                <p>My Complaints</p>
+                <p>Maharishi Markandeshwar (Deemed to be University)</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="my-complaints-container">
+
+        <h2>Hello, {{ student_name }}!</h2>
+        <p>Here you can view your submitted complaints and their status.</p>
+
+        <div class="page-buttons">
+            <a href="/complaint">
+                <button type="button">+ Submit New Complaint</button>
+            </a>
+
+            <a href="/">
+                <button type="button">Back to Home</button>
+            </a>
+        </div>
+
+        {% if complaints %}
+
+            {% for complaint in complaints %}
+
+                <div class="complaint-card">
+
+                    <h3>
+                        Complaint #{{ complaint.id }} — {{ complaint.title }}
+                    </h3>
+
+                    <div class="complaint-info">
+
+                        <p>
+                            <strong>Category:</strong>
+                            {{ complaint.category }}
+                        </p>
+
+                        <p>
+                            <strong>Description:</strong>
+                            {{ complaint.description }}
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            {{ complaint.location }}
+                        </p>
+
+                        <p>
+                            <strong>Priority:</strong>
+                            {{ complaint.priority }}
+                        </p>
+
+                        <p>
+                            <strong>Status:</strong>
+                            <span class="status
+    {% if complaint.status == 'Pending' %}status-pending
+    {% elif complaint.status == 'In Progress' %}status-in-progress
+    {% elif complaint.status == 'Resolved' %}status-resolved
+    {% endif %}">
+    {{ complaint.status }}
+</span>
+                        </p>
+
+                        <p>
+                            <strong>Submitted on:</strong>
+                            {{ complaint.created_at }}
+                        </p>
+
+                    </div>
+
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <div class="empty-message">
+                <h3>No complaints yet!</h3>
+                <p>You have not submitted any complaints.</p>
+
+                <a href="/complaint">
+                    <button type="button">Submit Your First Complaint</button>
+                </a>
+            </div>
+
+        {% endif %}
+
+    </main>
+
+    <footer>
+        <p>
+            <strong>CampusFix</strong><br>
+            Smart Campus Complaint Management System<br>
+            Maharishi Markandeshwar (Deemed to be University)
+        </p>
+
+        <p>© 2026 CampusFix</p>
+    </footer>
+
+</body>
+</html>

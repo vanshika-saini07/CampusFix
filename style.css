@@ -242,21 +242,14 @@ main {
 
 
 /* ================= CAMPUS IMAGE ================= */
-
 .campus-image {
     max-width: 100%;
-
     width: 850px;
-
     display: block;
-
     margin: 28px auto;
-
     border: 1px solid #ccc;
-
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.12);
 }
-
 
 /* ================= SECTIONS ================= */
 
@@ -799,4 +792,41 @@ body:has(.login-container) {
 /* Don't cover the campus image with white */
 body:has(.login-container) main {
     background-color: transparent;
+}
+
+
+/* Role Selector */
+.role-selector {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.role-selector p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #292929;
+}
+
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.role-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    color: #8b0000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.role-btn:hover,
+.role-btn.active {
+    background: #8b0000;
+    color: white;
 }

@@ -115,8 +115,8 @@ def complaint_page():
 # =============================
 
 @app.route("/about")
-def about_page():
-    return send_from_directory(BASE_DIR, "about.html")
+def about():
+    return render_template("about.html")
 
 
 # =============================

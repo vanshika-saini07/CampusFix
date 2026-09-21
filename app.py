@@ -97,8 +97,8 @@ def get_db_connection():
 # =============================
 
 @app.route("/")
-def home():
-    return send_from_directory(BASE_DIR, "index.html")
+def index():
+    return render_template("index.html")
 
 
 # =============================

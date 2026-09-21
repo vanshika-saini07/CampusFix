@@ -1097,3 +1097,179 @@ body:has(.login-container) main {
         padding: 20px 13px;
     }
 }
+
+/* =========================================
+   CAMPUSFIX — MOBILE HEADER FIX ONLY
+   Desktop / PC design remains unchanged
+   ========================================= */
+
+@media screen and (max-width: 700px) {
+
+    /* Header layout */
+    header .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 22px 15px;
+        gap: 12px;
+    }
+
+    /* University logo */
+    header .header-container img {
+        display: block;
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    /* CampusFix title and subtitle */
+    header .header-title {
+        width: 100%;
+        flex: none;
+        min-width: 0;
+        text-align: center;
+    }
+
+    header .header-title h1 {
+        font-size: 29px;
+        line-height: 1.3;
+        margin: 0 0 8px;
+    }
+
+    header .header-title p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 5px 0;
+        overflow-wrap: break-word;
+    }
+
+    /* Login and Register buttons */
+    header .header-buttons {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 12px !important;
+        margin: 10px 0 0 !important;
+    }
+
+    header .header-buttons a {
+        display: inline-block;
+        width: auto;
+        max-width: 48%;
+    }
+
+    header .header-buttons button {
+        width: 120px;
+        min-width: 0 !important;
+        height: 44px !important;
+        padding: 10px 12px !important;
+        font-size: 14px !important;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 11px 12px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* About page content */
+    main {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 12px;
+        margin: 0 auto;
+    }
+
+    .page-title {
+        padding: 20px 16px;
+        margin-bottom: 18px;
+    }
+
+    .page-title h1 {
+        font-size: 27px;
+        line-height: 1.35;
+    }
+
+    .page-title p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .section {
+        width: 100%;
+        padding: 20px 16px;
+        margin: 18px 0;
+    }
+
+    .section h2 {
+        font-size: 21px;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+    }
+
+    .section p,
+    .section li {
+        font-size: 14px;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+    }
+
+    /* Campus image */
+    .section .campus-image {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto 0;
+        object-fit: contain;
+    }
+
+    /* Footer */
+    footer {
+        padding: 22px 14px;
+        font-size: 13px;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Extra-small phones */
+@media screen and (max-width: 380px) {
+    header .header-title h1 {
+        font-size: 25px;
+    }
+
+    header .header-buttons button {
+        width: 110px;
+    }
+
+    nav a {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .page-title h1 {
+        font-size: 24px;
+    }
+
+    .section h2 {
+        font-size: 19px;
+    }
+}

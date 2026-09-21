@@ -283,95 +283,24 @@ def login_page():
             return redirect(url_for("my_complaints"))
 
         return """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login Error | CampusFix</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            background: #f5f2ee;
-        }
-
-        .error-card {
-            width: 100%;
-            max-width: 430px;
-            box-sizing: border-box;
-            padding: 30px 24px;
-            text-align: center;
-            background: white;
-            border-radius: 14px;
-            border-top: 5px solid #8b0000;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-        }
-
-        .error-icon {
-            font-size: 42px;
-            margin-bottom: 12px;
-        }
-
-        h2 {
-            color: #8b0000;
-            font-size: 23px;
-            margin: 0 0 14px;
-        }
-
-        p {
-            color: #555;
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-
-        a {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #8b0000;
-            color: white;
-            text-decoration: none;
-            border-radius: 7px;
-            font-weight: 600;
-            transition: 0.2s;
-        }
-
-        a:hover {
-            background: #650000;
-        }
-
-        @media (max-width: 480px) {
-            .error-card {
-                padding: 26px 18px;
-            }
-
-            h2 {
-                font-size: 21px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="error-card">
-        <div class="error-icon">⚠️</div>
-
-        <h2>Invalid Student ID/Email or Password</h2>
-
-        <p>Please check your details and try again.</p>
-
-        <a href="/login">Back to Login</a>
-    </div>
-</body>
-</html>
-""", 401
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Login Error | CampusFix</title>
+            <link rel="stylesheet" href="/static/style.css">
+        </head>
+        <body class="registration-success">
+            <div class="header">CampusFix</div>
+            <div class="login-container">
+                <h2>Invalid Student ID/Email or Password</h2>
+                <p>Please check your details and try again.</p>
+                <a href="/login">Back to Login</a>
+            </div>
+        </body>
+        </html>
+        """, 401
 
     except mysql.connector.Error as e:
         print("Login database error:", e)

@@ -1,0 +1,31 @@
+﻿                       id,             user_id,           title,                            description,         category,        location,    priority,     status,       created_at
+101,1,Lights not working,Lights in the hostel corridor are not working properly.,Electricity,Hostel Block A,High,Pending,2026-09-01
+102,2,Water leakage,Water is leaking near the washroom and the floor is wet.,Water,Hostel Block B,High,In Progress,2026-09-02
+103,3,Wi-Fi connection issue,Wi-Fi keeps disconnecting during online classes.,Internet/Wi-Fi,Academic Block,Medium,Pending,2026-09-03
+104,4,Classroom cleaning required,The classroom floor and desks need proper cleaning.,Cleanliness,Room 204,Low,Resolved,2026-09-04
+105,5,Hostel fan not working,The ceiling fan is not working in the hostel room.,Electricity,Hostel Block C,Medium,Pending,2026-09-05
+106,1,Damaged canteen chairs,Some chairs in the canteen are damaged and need repair.,Food/Canteen,Main Canteen,Low,In Progress,2026-09-06
+107,2,Projector not working,The classroom projector does not turn on during lectures.,Academic,Room 105,Medium,Pending,2026-09-07
+108,3,Broken campus pathway,A section of the pathway near the library needs repair.,Infrastructure,Near Library,Medium,Resolved,2026-09-08
+109,4,Water cooler not working,The water cooler is not dispensing drinking water.,Water,Academic Block,High,Pending,2026-09-09
+110,5,Library computer issue,A computer in the library is not starting.,Infrastructure,Library,Low,In Progress,2026-09-10
+111,1,Washroom tap leaking,The washroom tap continues to leak after use.,Water,Hostel Block A,Medium,Pending,2026-09-11
+112,2,Garbage not collected,Garbage bins near the hostel entrance need to be emptied.,Cleanliness,Hostel Block B,High,In Progress,2026-09-12
+113,3,Classroom lights flickering,The lights in the classroom flicker during lectures.,Electricity,Room 301,Medium,Pending,2026-09-13
+114,4,Canteen drinking water issue,The drinking water station near the canteen is not working.,Food/Canteen,Main Canteen,High,Resolved,2026-09-14
+115,5,Library Wi-Fi weak,The Wi-Fi signal is weak in the library reading area.,Internet/Wi-Fi,Library,Low,Pending,2026-09-15
+116,1,Broken classroom desk,A classroom desk is damaged and needs repair.,Infrastructure,Room 202,Low,In Progress,2026-09-16
+117,2,Hostel bathroom cleaning,The shared bathroom needs more regular cleaning.,Cleanliness,Hostel Block C,Medium,Pending,2026-09-17
+118,3,Lab computer not working,A computer in the computer lab does not start.,Academic,Computer Lab 1,Medium,Resolved,2026-09-18
+119,4,Campus streetlight issue,A streetlight near the campus parking area is not working.,Electricity,Parking Area,High,Pending,2026-09-19
+120,5,Canteen queue management,Long queues at the canteen are causing delays during lunch.,Food/Canteen,Main Canteen,Medium,In Progress,2026-09-20
+121,1,Hostel door lock issue,The lock on the hostel room door is difficult to use.,Hostel,Hostel Block A,Medium,Pending,2026-09-21
+122,2,Classroom seating problem,Some classroom seats are loose and uncomfortable.,Infrastructure,Room 105,Low,Resolved,2026-09-22
+123,3,Water supply interruption,Water supply was interrupted in the hostel washroom.,Water,Hostel Block B,High,In Progress,2026-09-23
+124,4,Dust in computer lab,"The computer lab needs cleaning, especially around the desks.",Cleanliness,Computer Lab 1,Low,Pending,2026-09-24
+125,5,Slow internet in hostel,Internet speed is very slow in the hostel during evening hours.,Internet/Wi-Fi,Hostel Block C,Medium,Pending,2026-09-25
+126,1,Broken library chair,A chair in the library reading area is damaged.,Infrastructure,Library,Low,In Progress,2026-09-26
+127,2,Classroom fan noise,A classroom fan is making unusual noise while running.,Electricity,Room 204,Medium,Resolved,2026-09-27
+128,3,Canteen cleanliness issue,Tables in the canteen need cleaning during busy hours.,Food/Canteen,Main Canteen,Medium,Pending,2026-09-28
+129,4,Damaged sports equipment,Some sports equipment needs repair before use.,Infrastructure,Sports Ground,Low,In Progress,2026-09-29
+130,5,Hostel water cooler issue,The water cooler in the hostel is not cooling water properly.,Water,Hostel Block C,Medium,Pending,2026-09-30
